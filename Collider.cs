@@ -29,7 +29,8 @@ public class Collider : MonoBehaviour
         }
         else if (whichGameObject == "collectible")
         {
-            gameManager.hp += 1;
+            gameManager.score += 1;
+            gameObject.SetActive(false);
         }
     }
 }
